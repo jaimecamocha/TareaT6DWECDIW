@@ -1,3 +1,6 @@
+//JAIME FERNÁNDEZ
+// https://github.com/jaimecamocha/TareaT6DWECDIW.git
+
 //boton hamburguesa
 var menu = document.querySelector('.hamburger');
 
