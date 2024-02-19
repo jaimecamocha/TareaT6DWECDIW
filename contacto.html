@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo validación formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+
+  <body class="font-sans bg-white">
+    <fieldset class="border-2 border-gray-300 rounded-lg shadow-md p-5 m-5 bg-gray-100">
+      <legend class="font-preahvihear text-xl">Contáctanos</legend>
+      <form name="formulario" id="formulario" action="envioCorrecto.html" method="get" class="flex flex-col">
+        <label for="nombre" class="font-bold mt-5 mb-2">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" class="w-full px-3 py-2 border border-gray-300 rounded-md mb-2" />
+        <span id="error1" class="error"></span>
+
+        <label for="apellidos" class="font-bold mt-5 mb-2">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" class="w-full px-3 py-2 border border-gray-300 rounded-md mb-2" />
+        <span id="error2" class="error"></span>
+
+        <label for="telefono" class="font-bold mt-5 mb-2">Teléfono:</label>
+        <input name="telefono" type="text" id="telefono" maxlength="9" class="w-full px-3 py-2 border border-gray-300 rounded-md mb-2" />
+        <span id="error3" class="error"></span>
+
+        <label for="correo" class="font-bold mt-5 mb-2">Correo electrónico:</label>
+        <input name="correo" type="text" id="correo" class="w-full px-3 py-2 border border-gray-300 rounded-md mb-2" />
+        <span id="error4" class="error"></span>
+
+        <label for="mensaje" class="font-bold mt-5 mb-2">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" cols="20" rows="20" placeholder="Inserte mensaje" class="w-full px-3 py-2 border border-gray-300 rounded-md mb-2"></textarea>
+
+        <ul id="errores"></ul>
+        <input type="reset" name="limpiar" id="limpiar" value="Limpiar" class="bg-gray-400 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-gray-500" />
+        <br />
+        <input type="submit" name="enviar" id="enviar" value="Enviar" class="bg-green-500 text-white px-4 py-2 rounded-md cursor-pointer hover:bg-green-600" />
+      </form>
+    </fieldset>
+
+    <script src="scripts/contacto-script.js"></script>
+  </body>
+</html>
+

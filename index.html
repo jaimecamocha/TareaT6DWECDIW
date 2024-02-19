@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>INICIO</title>
+</head>
+<body>
+
+  <div class="hamburger">
+    <div class="_layer -top"></div>
+    <div class="_layer -mid"></div>
+    <div class="_layer -bottom"></div>
+  </div>
+  
+  <div class="flex items-center bg-black">
+    <img src="assets/imgs/logo.png" alt="Logo" style="max-width: 40px; height: auto;">
+  </div>
+  
+  <nav class="flex justify-end bg-black">
+    <ul class="flex gap-2 text-white text-lg">
+      <li><a href="#">Inicio</a></li>
+      <li><span>|</span></li>
+      <li><a href="acercade.html">Acerca de</a></li>
+      <li><span>|</span></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><span>|</span></li>
+      <li><img id="darkModeImage" src="assets/imgs/oscuro.png" alt="Modo oscuro" class="w-10 h-10 mr-2 rounded-full"></li>
+    </ul>
+  </nav>  
+
+<div class="hero-content bg-cover bg-center bg-no-repeat relative flex items-center justify-center flex-col text-white font-sans" style="height: 70vh;">
+  <video autoplay loop muted class="absolute inset-0 w-full h-full object-cover">
+    <source src="../assets/videos/himno.mp4" type="video/mp4">
+    Tu navegador no admite el elemento de video.
+  </video>
+  <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl z-10">FÚTBOL CAMOCHA</h1>
+  <br>
+  <span class="text-lg md:text-xl lg:text-2xl xl:text-3xl z-10">Toda la información sobre el deporte rey que desee al alcance de su mano.</span>
+</div>
+
+
+<div class="mensaje text-center my-12 mx-auto max-w-4xl bg-white p-4 rounded-lg">
+  <p>Real Sporting, equipo famoso, de rancia solera, brillante historial, que a Gijón tu le diste gran fama y en El Molinón no tienes rival. De tu cantera surgieron valores que nadie ni nunca podrán olvidar, vencedor por los campos de España, otra vez volveras a triunfar. ¡Aupa Real Sporting!, equipo legendario que tanto has luchado para poder triunfar, revive tus laureles y siempre hacia adelante, tu fe nunca decaiga no debes desmayar. Sporting a la lucha, batalla sin cesar. ¡Aupa Real Sporting!, de ti esperamos más.</p>
+</div>
+
+<div class="flex justify-center">
+
+  <div class="tarjeta bg-white rounded-lg overflow-hidden shadow-md mx-4 w-64">
+    <div class="estadio-img-wrapper relative">
+      <img src="assets/imgs/estadio.jpg" alt="Imagen 1" class="w-full h-40 object-cover object-center">
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+    </div>
+    <div class="p-4">
+      <h1 class="text-lg font-semibold text-center">GALERÍA</h1>
+      <p class="text-lg font-semibold">Galeria de imágenes de estadios de fútbol</p>
+    </div>
+  </div>
+
+  <div class="tarjeta bg-white rounded-lg overflow-hidden shadow-md mx-4 w-64">
+    <img src="assets/imgs/tienda.jpeg" alt="Imagen 2" class="w-full h-40 object-cover object-center">
+    <div class="p-4">
+      <h1 class="text-lg font-semibold text-center">TIENDA</h1>
+      <p class="text-lg font-semibold">Tienda online de material deportivo</p>
+    </div>
+  </div>
+</div>
+
+<div class="flex justify-center">
+  <div id="carousel" class="w-3/4 flex items-center">
+    <button onclick="prevImage()" class="mr-4">&#10094;</button>
+    <img id="currentImage" src="assets/imgs/carrusel1.jpg" alt="Img carrusel" class="w-full">
+    <button onclick="nextImage()" class="ml-4">&#10095;</button>
+  </div>
+</div>
+
+<footer class="footer bg-gray-900 text-white py-16">
+  <div class="container-footer max-w-7xl mx-auto">
+    <div class="row-footer flex flex-wrap -mx-4">
+      <div class="footer-col w-full sm:w-1/2 md:w-1/4 px-4 mb-8 md:mb-0">
+        <h4 class="text-xl mb-4">Fútbol Camocha</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="acercade.html">Acerca de nosotros</a></li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col w-full sm:w-1/2 md:w-1/4 px-4 mb-8 md:mb-0">
+        <h4 class="text-xl mb-4">Galería</h4>
+        <ul>
+          <li><a href="#">Estadios</a></li>
+          <li><a href="#">Ciudades deportivas</a></li>
+          <li><a href="#">Salas de trofeos</a></li>
+          <li><a href="#">Plantilla</a></li>
+        </ul>
+      </div>
+      <div class="footer-col w-full sm:w-1/2 md:w-1/4 px-4 mb-8 md:mb-0">
+        <h4 class="text-xl mb-4">Nuestra tienda</h4>
+        <ul>
+          <li><a href="#">Equipaciones</a></li>
+          <li><a href="#">Chandals</a></li>
+          <li><a href="#">Botas</a></li>
+          <li><a href="#">Accesorios</a></li>
+        </ul>
+      </div>
+      <div class="footer-col w-full sm:w-1/2 md:w-1/4 px-4 mb-8 md:mb-0">
+        <h4 class="text-xl mb-4">Nuestras redes</h4>
+        <div class="social-links">
+          <a href="#"><img src="assets/imgs/facebooklogo.PNG" alt="Facebook" class="w-10 h-10 mr-2 rounded-full"></a>
+          <a href="#"><img src="assets/imgs/xlogo.jpeg" alt="X" class="w-10 h-10 mr-2 rounded-full"></a>
+          <a href="#"><img src="assets/imgs/instagramlogo.PNG" alt="Instagram" class="w-10 h-10 mr-2 rounded-full"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/index-script.js"></script>
+</body>
+</html>
